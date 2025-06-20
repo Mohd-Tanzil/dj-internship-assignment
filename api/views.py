@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from django.http import HttpResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
+from .tasks import send_welcome_email 
 
 @api_view(['GET'])
 def public_api(request):
@@ -17,4 +18,10 @@ def home_view(request):
 @api_view(['GET']) 
 @permission_classes([IsAuthenticated])  
 def protected_api(request):
-    return Response({"message": f"Hello, {request.user.username}! This is a protected API."})
+    # Trigger Celery task
+    send_welcome_email.delay(request.user.username, request.user.email)
+
+    return Response({
+        "message": f"Hello, {request.user.username}! This is a protected API.",
+        "status": " Email task has been queued successfully!"
+    })
