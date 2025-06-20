@@ -47,6 +47,15 @@ This is my internship assignment project built with Django & Django REST Framewo
 ### 🔐 Protected API with Token
 ![Protected API](screenshots/Screenshot%202025-06-19%20154134.png)
 
+📩 Telegram Bot Integration
+
+🔹 When a user sends `/start`, the bot replies and stores their Telegram username in the Django DB.
+
+**🗨️ Telegram Interface**
+![Telegram /start command](screenshots/Screenshot 2025-06-20 091649.png)
+
+**💻 Terminal Output (Bot received username)**
+![Bot terminal log](screenshots/Screenshot 2025-06-20 091714.png)
 
 
 ## 🛠️ Tech Stack
