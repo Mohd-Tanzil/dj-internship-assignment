@@ -57,6 +57,13 @@ This is my internship assignment project built with Django & Django REST Framewo
 **💻 Terminal Output (Bot received username)**
 ![Bot terminal log](screenshots/Screenshot%202025-06-20%20091714.png)
 
+## ✅ Task Execution Screenshots
+
+`send_welcome_email.delay("Tanzil", "tanzil@example.com")` triggered in Django shell and processed successfully in Celery.
+
+![Django Shell](screenshots/Screenshot%202025-06-21%20000612.png)  
+![Celery Worker](screenshots/Screenshot%202025-06-20%20235733.png)
+
 ## 🛠️ Tech Stack
 - Python 3.12
 - Django 5.2.3
