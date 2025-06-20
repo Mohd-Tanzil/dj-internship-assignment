@@ -52,11 +52,10 @@ This is my internship assignment project built with Django & Django REST Framewo
 🔹 When a user sends `/start`, the bot replies and stores their Telegram username in the Django DB.
 
 **🗨️ Telegram Interface**
-![Telegram /start command](screenshots/Screenshot%2025-06-20%091649.png)
+![Telegram /start command](screenshots/Screenshot%202025-06-20%20091649.png)
 
 **💻 Terminal Output (Bot received username)**
-![Bot terminal log](screenshots/Screenshot%2025-06-20%091714.png)
-
+![Bot terminal log](screenshots/Screenshot%202025-06-20%20091714.png)
 
 ## 🛠️ Tech Stack
 - Python 3.12
